@@ -26,3 +26,14 @@ def word_count(string):
 
 
 
+3) copy
+
+def word_count(arg):
+    words = arg.lower().split()
+    num_words = {}
+    for word in words:
+        if word in num_words.keys():
+            num_words[word] += 1
+        else:
+            num_words[word] = 1
+    return num_words
